@@ -1,0 +1,170 @@
+body,
+    html {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .tic {
+      display: flex;
+      flex-direction: column;
+      box-shadow: 4px 4px 4px 4px grey;
+      margin: 10px 10% 0 10%;
+    }
+
+    .grid {
+      display: grid;
+      width: 60%;
+      grid-template-areas: ". . ."". . ."". . .""st st re";
+      grid-template-columns: 90px 90px 90px;
+      grid-template-rows: 70px 70px 70px 70px;
+      padding: 10px;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .d1,
+    .d2,
+    .d3,
+    .d4,
+    .d5,
+    .d6,
+    .d7,
+    .d8,
+    .d9 {
+      background-color: #0739A3;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+      border: 2px solid pink;
+      border-radius: 10px;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .reset {
+      grid-area: re;
+    }
+
+    .start {
+      grid-area: st;
+    }
+
+    .start,
+    .reset {
+      background-color: #cd0099;
+      color: white;
+      padding: 10px;
+      margin: 1%;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      border: 2px solid pink;
+    }
+
+    .text {
+      background-color: green;
+      color: white;
+      font-size: 30px;
+      padding-left: 2%;
+      text-align: center;
+    }
+
+    .grid-area {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .image {
+      width: 40%;
+    }
+
+    .h1 {
+      text-align: center;
+      color: white;
+      background: linear-gradient(red, orange);
+    }
+
+    #i {
+      margin: 1%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      * {
+        box-sizing: border-box;
+      }
+
+      .grid-area {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      .grid {
+        display: grid;
+        width: 100%;
+        grid-template-areas: ". . ."". . ."". . .""st st re";
+        grid-template-columns: 90px 90px 90px;
+        grid-template-rows: 70px 70px 70px 70px;
+        padding: 10px;
+        justify-content: center;
+        align-content: center;
+      }
+
+      .image {
+        width: 100%;
+      }
+
+      .text {
+        background-color: green;
+        color: white;
+        font-size: 30px;
+        padding-left: 2%;
+        text-align: center;
+      }
+    }
+
+    @media only screen and (max-width:330px) {
+      * {
+        box-sizing: border-box;
+      }
+
+      .grid-area {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      .grid {
+        display: grid;
+        width: 100%;
+        grid-template-areas: ". . ."". . ."". . .""st st re";
+        grid-template-columns: 70px 70px 70px;
+        grid-template-rows: 70px 70px 70px 70px;
+        padding: 10px;
+        justify-content: center;
+        align-content: center;
+      }
+
+      .image {
+        width: 100%;
+      }
+
+      .text {
+        background-color: green;
+        color: white;
+        font-size: 30px;
+        padding-left: 2%;
+        text-align: center;
+      }
+    }
