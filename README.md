@@ -14,6 +14,7 @@
   <li><b>Win detection:</b> Automatically detects when a player has won or if the game ends in a draw.</li>
 </ul>
 <h2>Demo</h2>
+<img src='' alt='DemoImage'/>
 <h2>Installation</h2>
 <span>To install and run this game locally, follow these steps:</span>
 <li><b>Clone the repository:</b></li>
